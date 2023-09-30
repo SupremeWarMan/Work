@@ -6,20 +6,25 @@
     <title>Binary Converter</title>
 
     <!-- Link your CSS file here -->
-    <link rel="style.css" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="converter-container">
-        <h1>Binary Converter</h1>
+        <h1>Binary and Decimal Converter</h1>
         <div class="input-container">
-            <label for="binaryInput">Binary:</label>
-            <input type="text" id="binaryInput" placeholder="Enter binary number">
-            <button id="convertToDecimal">Convert to Decimal</button>
+            <label for="conversionInput">Enter Number:</label>
+            <input type="text" id="conversionInput" placeholder="Enter number">
+            <button id="convert">Convert</button>
+        </div>
+        <div class="conversion-type">
+            <input type="radio" id="binaryToDecimal" name="conversionType" value="binaryToDecimal">
+            <label for="binaryToDecimal">Binary to Decimal</label>
+            <input type="radio" id="decimalToBinary" name="conversionType" value="decimalToBinary">
+            <label for="decimalToBinary">Decimal to Binary</label>
         </div>
         <div class="output-container">
-            <label for="decimalInput">Decimal:</label>
-            <input type="text" id="decimalInput" readonly>
-            <button id="convertToBinary">Convert to Binary</button>
+            <label for="conversionOutput">Result:</label>
+            <input type="text" id="conversionOutput" placeholder="Converted result" readonly>
         </div>
     </div>
     
