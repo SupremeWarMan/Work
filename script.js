@@ -5,11 +5,6 @@ document.getElementById("convertButton").addEventListener("click", function () {
     let resultMessage = "";
 
 
-        const resultTextArea = document.getElementById("resultMessage");
-    resultTextArea.value = resultMessage;
-    resultTextArea.style.display = "block";
-    switch (sourceEncoding) {
-
             
         case "plainText":
             switch (targetEncoding) {
@@ -217,4 +212,8 @@ function decimalToMorse(decimal) {
     const text = decimalToText(decimal);
     return textToMorse(text);
 }
+
+    const resultTextArea = document.getElementById("resultMessage");
+    resultTextArea.value = resultMessage;
+});
 
