@@ -3,8 +3,6 @@ document.getElementById("convertButton").addEventListener("click", function () {
     const sourceEncoding = document.getElementById("sourceEncoding").value;
     const targetEncoding = document.getElementById("targetEncoding").value;
     let resultMessage = "";
-
-
             
         case "plainText":
             switch (targetEncoding) {
@@ -212,7 +210,6 @@ function decimalToMorse(decimal) {
     const text = decimalToText(decimal);
     return textToMorse(text);
 }
-
     const resultTextArea = document.getElementById("resultMessage");
     resultTextArea.value = resultMessage;
 });
