@@ -9,8 +9,8 @@
     <label for="inputMessage">Input Message:</label>
     <input type="text" id="inputMessage" placeholder="Enter your message"><br><br>
 
-    <label for="encodingType">Choose Encoding:</label>
-    <select id="encodingType">
+    <label for="sourceEncoding">Source Encoding:</label>
+    <select id="sourceEncoding">
         <option value="plainText">Plain Text</option>
         <option value="binary">Binary</option>
         <option value="hexadecimal">Hexadecimal</option>
@@ -18,10 +18,19 @@
         <option value="decimal">Decimal</option>
     </select><br><br>
 
-    <button id="encodeButton">Encode</button><br><br>
+    <label for="targetEncoding">Target Encoding:</label>
+    <select id="targetEncoding">
+        <option value="plainText">Plain Text</option>
+        <option value="binary">Binary</option>
+        <option value="hexadecimal">Hexadecimal</option>
+        <option value="morse">Morse Code</option>
+        <option value="decimal">Decimal</option>
+    </select><br><br>
 
-    <label for="encodedMessage">Encoded Message:</label>
-    <textarea id="encodedMessage" rows="5" cols="50" readonly></textarea>
+    <button id="convertButton">Convert</button><br><br>
+
+    <label for="resultMessage">Result Message:</label>
+    <textarea id="resultMessage" rows="5" cols="50" readonly></textarea>
 
     <script src="script.js"></script>
 </body>
