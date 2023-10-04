@@ -1,46 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Encoder/Decoder</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Message Encoder</title>
 </head>
 <body>
+    <h1>Message Encoder</h1>
+    
+    <label for="inputMessage">Input Message:</label>
+    <input type="text" id="inputMessage" placeholder="Enter your message"><br><br>
 
-<!-- Encode Section -->
-<div class="section">
-    <h2>Encoding</h2>
-    <select id="encodeType">
-        <!-- Add options for encoding types (e.g., Binary, Decimal, Hexadecimal, Morse, Base64, Alphabet) -->
+    <label for="encodingType">Choose Encoding:</label>
+    <select id="encodingType">
+        <option value="plainText">Plain Text</option>
         <option value="binary">Binary</option>
-        <option value="decimal">Decimal</option>
         <option value="hexadecimal">Hexadecimal</option>
         <option value="morse">Morse Code</option>
-        <option value="base64">Base64</option>
-        <option value="alphabet">Alphabet</option>
-    </select>
-    <textarea id="encodeInput" placeholder="Enter text to encode"></textarea>
-    <button id="encodeButton">Encode</button>
-    <div id="encodeOutput" class="output"></div>
-</div>
-
-<!-- Decode Section -->
-<div class="section">
-    <h2>Decoding</h2>
-    <select id="decodeType">
-        <!-- Add options for decoding types corresponding to encoding types -->
-        <option value="binary">Binary</option>
         <option value="decimal">Decimal</option>
-        <option value="hexadecimal">Hexadecimal</option>
-        <option value="morse">Morse Code</option>
-        <option value="base64">Base64</option>
-        <option value="alphabet">Alphabet</option>
-    </select>
-    <textarea id="decodeInput" placeholder="Enter text to decode"></textarea>
-    <button id="decodeButton">Decode</button>
-    <div id="decodeOutput" class="output"></div>
-</div>
+    </select><br><br>
+
+    <button id="encodeButton">Encode</button><br><br>
+
+    <label for="encodedMessage">Encoded Message:</label>
+    <textarea id="encodedMessage" rows="5" cols="50" readonly></textarea>
 
     <script src="script.js"></script>
 </body>
