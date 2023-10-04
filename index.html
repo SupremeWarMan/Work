@@ -1,38 +1,57 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title>Message Encoder</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Message Encoder</h1>
+    <header>
+        <h1>Message Encoder</h1>
+    </header>
     
-    <label for="inputMessage">Input Message:</label>
-    <input type="text" id="inputMessage" placeholder="Enter your message"><br><br>
+    <main>
+        <section class="form-container">
+            <h2>Encode and Decode Messages</h2>
+            <form>
+                <label for="inputMessage">Input Message:</label>
+                <input type="text" id="inputMessage" placeholder="Enter your message" required>
+                
+                <div class="encoding-options">
+                    <div class="encoding-option">
+                        <label for="sourceEncoding">Source Encoding:</label>
+                        <select id="sourceEncoding" required>
+                            <option value="plainText">Plain Text</option>
+                            <option value="binary">Binary</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                            <option value="morse">Morse Code</option>
+                            <option value="decimal">Decimal</option>
+                        </select>
+                    </div>
+                    
+                    <div class="encoding-option">
+                        <label for="targetEncoding">Target Encoding:</label>
+                        <select id="targetEncoding" required>
+                            <option value="plainText">Plain Text</option>
+                            <option value="binary">Binary</option>
+                            <option value="hexadecimal">Hexadecimal</option>
+                            <option value="morse">Morse Code</option>
+                            <option value="decimal">Decimal</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button id="convertButton">Convert</button>
+                
+                <label for="resultMessage">Result Message:</label>
+                <textarea id="resultMessage" rows="5" cols="50" readonly></textarea>
+            </form>
+        </section>
+    </main>
 
-    <label for="sourceEncoding">Source Encoding:</label>
-    <select id="sourceEncoding">
-        <option value="plainText">Plain Text</option>
-        <option value="binary">Binary</option>
-        <option value="hexadecimal">Hexadecimal</option>
-        <option value="morse">Morse Code</option>
-        <option value="decimal">Decimal</option>
-    </select><br><br>
-
-    <label for="targetEncoding">Target Encoding:</label>
-    <select id="targetEncoding">
-        <option value="plainText">Plain Text</option>
-        <option value="binary">Binary</option>
-        <option value="hexadecimal">Hexadecimal</option>
-        <option value="morse">Morse Code</option>
-        <option value="decimal">Decimal</option>
-    </select><br><br>
-
-    <button id="convertButton">Convert</button><br><br>
-
-    <label for="resultMessage">Result Message:</label>
-    <textarea id="resultMessage" rows="5" cols="50" readonly></textarea>
+    <footer>
+        &copy; 2023 Message Encoder
+    </footer>
 
     <script src="script.js"></script>
 </body>
