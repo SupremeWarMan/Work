@@ -4,7 +4,13 @@ document.getElementById("convertButton").addEventListener("click", function () {
     const targetEncoding = document.getElementById("targetEncoding").value;
     let resultMessage = "";
 
+
+        const resultTextArea = document.getElementById("resultMessage");
+    resultTextArea.value = resultMessage;
+    resultTextArea.style.display = "block";
     switch (sourceEncoding) {
+
+            
         case "plainText":
             switch (targetEncoding) {
                 case "plainText":
