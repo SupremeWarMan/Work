@@ -16,29 +16,23 @@
                 <label for="inputMessage">Input Message:</label>
                 <input type="text" id="inputMessage" placeholder="Enter your message" required>
                 
-                <div class="encoding-options">
-                    <div class="encoding-option">
-                        <label for="sourceEncoding">Source Encoding:</label>
-                        <select id="sourceEncoding" required>
-                            <option value="plainText">Plain Text</option>
-                            <option value="binary">Binary</option>
-                            <option value="hexadecimal">Hexadecimal</option>
-                            <option value="morse">Morse Code</option>
-                            <option value="decimal">Decimal</option>
-                        </select>
-                    </div>
-                    
-                    <div class="encoding-option">
-                        <label for="targetEncoding">Target Encoding:</label>
-                        <select id="targetEncoding" required>
-                            <option value="plainText">Plain Text</option>
-                            <option value="binary">Binary</option>
-                            <option value="hexadecimal">Hexadecimal</option>
-                            <option value="morse">Morse Code</option>
-                            <option value="decimal">Decimal</option>
-                        </select>
-                    </div>
-                </div>
+                <label for="sourceEncoding">Source Encoding:</label>
+                <select id="sourceEncoding" required>
+                    <option value="plainText">Plain Text</option>
+                    <option value="binary">Binary</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                    <option value="morse">Morse Code</option>
+                    <option value="decimal">Decimal</option>
+                </select>
+                
+                <label for="targetEncoding">Target Encoding:</label>
+                <select id="targetEncoding" required>
+                    <option value="plainText">Plain Text</option>
+                    <option value="binary">Binary</option>
+                    <option value="hexadecimal">Hexadecimal</option>
+                    <option value="morse">Morse Code</option>
+                    <option value="decimal">Decimal</option>
+                </select>
                 
                 <button id="convertButton">Convert</button>
                 
@@ -55,4 +49,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
