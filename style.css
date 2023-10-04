@@ -47,7 +47,7 @@ label {
 
 /* Input and select box styling */
 input[type="text"], select {
-    width: 85%;
+    width: 80%; /* Reduced width */
     padding: 15px;
     margin-bottom: 20px;
     border: 2px solid #ccc;
@@ -74,7 +74,7 @@ button:hover {
 
 /* Result textarea styling */
 textarea {
-    width: 85%;
+    width: 80%; /* Reduced width */
     padding: 15px;
     margin-top: 15px;
     border: 2px solid #ccc;
