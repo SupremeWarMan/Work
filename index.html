@@ -1,51 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Message Encoder</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter</title>
 </head>
 <body>
-    <header>
-        <h1>Message Encoder</h1>
-    </header>
-    
-    <main>
-        <section class="form-container">
-            <h2>Encode and Decode Messages</h2>
-            <form>
-                <label for="inputMessage">Input Message:</label>
-                <input type="text" id="inputMessage" placeholder="Enter your message" required>
-                
-                <label for="sourceEncoding">Source Encoding:</label>
-                <select id="sourceEncoding" required>
-                    <option value="plainText">Plain Text</option>
-                    <option value="binary">Binary</option>
-                    <option value="hexadecimal">Hexadecimal</option>
-                    <option value="morse">Morse Code</option>
-                    <option value="decimal">Decimal</option>
-                </select>
-                
-                <label for="targetEncoding">Target Encoding:</label>
-                <select id="targetEncoding" required>
-                    <option value="plainText">Plain Text</option>
-                    <option value="binary">Binary</option>
-                    <option value="hexadecimal">Hexadecimal</option>
-                    <option value="morse">Morse Code</option>
-                    <option value="decimal">Decimal</option>
-                </select>
-                
-                <button id="convertButton">Convert</button>
-                
-                <label for="resultMessage">Result Message:</label>
-                <textarea id="resultMessage" rows="5" cols="40" readonly></textarea>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        &copy; 2023 Message Encoder
-    </footer>
-
+    <h1>Decimal-Binary Converter</h1>
+    <div class="converter">
+        <div class="decimal">
+            <label for="decimalInput">Decimal:</label>
+            <input type="number" id="decimalInput">
+            <button onclick="decimalToBinary()">Convert to Binary</button>
+        </div>
+        <div class="binary">
+            <label for="binaryInput">Binary: </label>
+            <input type="number" id="binaryInput">
+            <button onclick="binaryToDecimal()">Convert to Decimal</button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+<footer>
+    &copy; 2023 Decimal-Binary Converter
+</footer>
 </html>
